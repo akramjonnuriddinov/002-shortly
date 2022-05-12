@@ -254,3 +254,130 @@ img {
     font-size: 20px;
     line-height: 30px;
 }
+
+
+.form-wrapper {
+    background-color: #EFF1F7;
+    position: relative;
+    padding-top: 204px;
+    padding-bottom: 120px;
+}
+
+.form-wrapper__container {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.form {
+    display: flex;
+    background-image: url("../img/form-bg.svg");
+    background-repeat: no-repeat;
+    padding: 52px 64px;
+    background-color: #3A3054;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+}
+
+.form__inner {
+    width: 769px;
+    padding: 14px 32px;
+    border-radius: 10px;
+    margin-right: 24px;
+    background-color: #fff;
+    color: #34313D;
+    border: none;
+}
+
+.form__btn {
+    padding: 18px 40px 16px 41px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about__info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    margin-bottom: 56px;
+}
+
+.about__title {
+    color: #34313D;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about__text {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.12px;   
+}
+
+.card {
+    background-image: url("../img/card-list-bg.svg");
+    background-repeat: no-repeat;
+    z-index: -10;
+    background-position: center;
+    border: 1px solid red;
+    padding-top: 88px;
+    padding-bottom: 44px;
+}
+
+.card-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-list__item {
+    background-color: #fff;
+    padding: 77px 32px 41px 32px;
+    position: relative;
+}
+
+.card-list__item:first-child {
+    transform: translateY(-44px);
+}
+
+.card-list__item:last-child {
+    transform: translateY(44px);
+}
+
+.card-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card-item__img {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.card-item__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 33px;
+    color: #34313D;
+}
+
+.card-item__text {
+    line-height: 26px;
+}
