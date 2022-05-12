@@ -328,7 +328,6 @@ img {
     background-repeat: no-repeat;
     z-index: -10;
     background-position: center;
-    border: 1px solid red;
     padding-top: 88px;
     padding-bottom: 44px;
 }
@@ -380,4 +379,37 @@ img {
 
 .card-item__text {
     line-height: 26px;
+}
+
+
+.boost {
+    background-image: url("../img/boost-bg.svg");
+    background-repeat: no-repeat;
+    background-color: #4B3F6B;
+}
+
+.boost__container {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boost__title {
+    margin: 0;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.boost__btn {
+    padding: 12px 40px 14px 40px;
 }
