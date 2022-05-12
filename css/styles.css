@@ -326,10 +326,8 @@ img {
 .card {
     background-image: url("../img/card-list-bg.svg");
     background-repeat: no-repeat;
-    z-index: -10;
     background-position: center;
     padding-top: 88px;
-    padding-bottom: 44px;
 }
 
 .card-list {
@@ -338,7 +336,7 @@ img {
     padding: 0;
     list-style: none;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .card-list__item {
@@ -348,11 +346,11 @@ img {
 }
 
 .card-list__item:first-child {
-    transform: translateY(-44px);
+    margin-top: -44px;
 }
 
 .card-list__item:last-child {
-    transform: translateY(44px);
+    margin-top: 44px;
 }
 
 .card-list__item:not(:last-child) {
@@ -379,6 +377,7 @@ img {
 
 .card-item__text {
     line-height: 26px;
+    margin: 0;
 }
 
 
@@ -386,6 +385,7 @@ img {
     background-image: url("../img/boost-bg.svg");
     background-repeat: no-repeat;
     background-color: #4B3F6B;
+    background-position: center;
 }
 
 .boost__container {
@@ -412,4 +412,91 @@ img {
 
 .boost__btn {
     padding: 12px 40px 14px 40px;
+}
+
+
+/* FOOTER */
+.site-footer {
+    background-color: #232127;
+}
+
+.site-footer__container {
+    padding-top: 71px;
+    padding-bottom: 72px;
+    display: flex;
+}
+
+.site-footer__logo-link {
+    color: #fff;
+    margin-right: 261px;
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 101px;
+}
+
+.footer-list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list__item:first-child {
+    margin-right: 108px;
+}
+
+.footer-list__item:nth-child(2) {
+    margin-right: 107px;
+}
+
+.footer-list__item-title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.footer-list__link {
+    display: block;
+    color: #BFBFBF;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: -0.23px;
+}
+
+.footer-list__link:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-icon__item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.footer-icon__link {
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-icon__link:hover .footer-icon__svg {
+    color: var(--text-color);
+}
+
+.footer-icon__svg {
+    transition: color 0.4s ease;
+    color: #fff;
+    width: 24px;
+    height: 24px;
 }
