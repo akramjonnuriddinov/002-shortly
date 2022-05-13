@@ -255,6 +255,11 @@ img {
     line-height: 30px;
 }
 
+.hero__img {
+    width: 734px;
+    height: 432px;
+    display: block;
+}
 
 .form-wrapper {
     background-color: #EFF1F7;
